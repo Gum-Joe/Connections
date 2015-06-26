@@ -1,0 +1,38 @@
+{
+  "name": "connections",
+  "version": "1.0.0",
+  "description": "Connect with the world",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Gum-Joe/Connections.git"
+  },
+  "keywords": [
+    "connect",
+    "connections"
+  ],
+  "author": "Gum-Joe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gum-Joe/Connections/issues"
+  },
+  "homepage": "https://github.com/Gum-Joe/Connections#readme",
+  "dependencies": {
+    "body-parser": "~1.8.1",
+    "cookie-parser": "~1.3.3",
+    "debug": "~2.0.0",
+    "ejs": "2.3.1",
+    "express": "4.12.4",
+    "jade": "~1.6.0",
+    "mongodb": "^2.0.34",
+    "mongoose": "^4.0.6",
+    "morgan": "~1.3.0",
+    "passport-google": "^0.3.0",
+    "serve-favicon": "~2.1.3",
+    "stylus": "0.42.3",
+    "bcrypt": "0.8.3"
+  }
+}
