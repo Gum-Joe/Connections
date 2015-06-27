@@ -7,3 +7,4 @@ node_js:
 script:
  - exec npm install
  - exec npm install --save
+ - bundle exec npm install --save
