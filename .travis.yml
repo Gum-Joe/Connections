@@ -5,6 +5,6 @@ node_js:
  - "0.10"
 
 script:
- - exec npm install
- - exec npm install --save
+ - bundle exec npm install
+ - bundle exec npm install --save
  - bundle exec npm install --save
