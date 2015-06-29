@@ -1,0 +1,153 @@
+info it worked if it ends with ok
+verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install' ]
+info using npm@1.1.4
+info using node@v0.6.19
+verbose config file /root/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/share/npm/npmrc
+verbose caching /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/package.json
+verbose loadDefaults connections@1.0.0
+verbose readDependencies: using package.json deps
+verbose where, deps [ '/home/pi/Desktop/Programming/Build-Bcrypt/Connetions',
+verbose where, deps   [ 'body-parser',
+verbose where, deps     'cookie-parser',
+verbose where, deps     'debug',
+verbose where, deps     'ejs',
+verbose where, deps     'express',
+verbose where, deps     'jade',
+verbose where, deps     'mongodb',
+verbose where, deps     'mongoose',
+verbose where, deps     'morgan',
+verbose where, deps     'passport-google',
+verbose where, deps     'serve-favicon',
+verbose where, deps     'stylus',
+verbose where, deps     'bcrypt' ] ]
+verbose from cache /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/package.json
+info preinstall connections@1.0.0
+verbose caching /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/body-parser/package.json
+verbose loadDefaults body-parser@1.8.4
+verbose caching /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/express/package.json
+verbose loadDefaults express@4.12.4
+verbose caching /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/morgan/package.json
+verbose loadDefaults morgan@1.3.2
+verbose caching /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/mongoose/package.json
+verbose loadDefaults mongoose@4.0.6
+verbose caching /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/stylus/package.json
+verbose loadDefaults stylus@0.42.3
+verbose caching /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/ejs/package.json
+verbose loadDefaults ejs@2.3.1
+verbose caching /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/passport-google/package.json
+verbose loadDefaults passport-google@0.3.0
+verbose caching /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/passport-http/package.json
+verbose loadDefaults passport-http@0.2.2
+verbose caching /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/mongodb/package.json
+verbose loadDefaults mongodb@2.0.34
+verbose caching /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/jade/package.json
+verbose loadDefaults jade@1.6.0
+verbose caching /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/serve-favicon/package.json
+verbose loadDefaults serve-favicon@2.1.7
+verbose caching /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/bcrypt/package.json
+verbose loadDefaults bcrypt@0.8.3
+verbose caching /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/passport-local/package.json
+verbose loadDefaults passport-local@1.0.0
+verbose caching /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/passport/package.json
+verbose loadDefaults passport@0.2.2
+verbose caching /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/cookie-parser/package.json
+verbose loadDefaults cookie-parser@1.3.5
+verbose caching /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/debug/package.json
+verbose loadDefaults debug@2.0.0
+verbose from cache /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/body-parser/package.json
+verbose from cache /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/express/package.json
+verbose from cache /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/morgan/package.json
+verbose from cache /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/mongoose/package.json
+verbose from cache /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/stylus/package.json
+verbose from cache /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/ejs/package.json
+verbose from cache /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/passport-google/package.json
+verbose from cache /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/passport-http/package.json
+verbose from cache /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/mongodb/package.json
+verbose from cache /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/jade/package.json
+verbose from cache /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/serve-favicon/package.json
+verbose from cache /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/bcrypt/package.json
+verbose from cache /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/passport-local/package.json
+verbose from cache /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/passport/package.json
+verbose from cache /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/cookie-parser/package.json
+verbose from cache /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/node_modules/debug/package.json
+verbose already installed in /home/pi/Desktop/Programming/Build-Bcrypt/Connetions skipping body-parser@~1.8.1
+verbose already installed in /home/pi/Desktop/Programming/Build-Bcrypt/Connetions skipping cookie-parser@~1.3.3
+verbose already installed in /home/pi/Desktop/Programming/Build-Bcrypt/Connetions skipping debug@~2.0.0
+verbose already installed in /home/pi/Desktop/Programming/Build-Bcrypt/Connetions skipping ejs@2.3.1
+verbose already installed in /home/pi/Desktop/Programming/Build-Bcrypt/Connetions skipping express@4.12.4
+verbose already installed in /home/pi/Desktop/Programming/Build-Bcrypt/Connetions skipping jade@~1.6.0
+verbose cache add [ 'mongodb@^2.0.34', null ]
+silly cache add: name, spec, args [ undefined, 'mongodb@^2.0.34', [ 'mongodb@^2.0.34', null ] ]
+verbose parsed url { pathname: 'mongodb@^2.0.34',
+verbose parsed url   path: 'mongodb@^2.0.34',
+verbose parsed url   href: 'mongodb@^2.0.34' }
+silly cache add: name, spec, args [ 'mongodb', '^2.0.34', [ 'mongodb', '^2.0.34' ] ]
+verbose parsed url { pathname: '^2.0.34', path: '^2.0.34', href: '^2.0.34' }
+verbose addNamed [ 'mongodb', '^2.0.34' ]
+verbose addNamed [ null, null ]
+info addNameTag [ 'mongodb', '^2.0.34' ]
+verbose cache add [ 'mongoose@^4.0.6', null ]
+silly cache add: name, spec, args [ undefined, 'mongoose@^4.0.6', [ 'mongoose@^4.0.6', null ] ]
+verbose parsed url { pathname: 'mongoose@^4.0.6',
+verbose parsed url   path: 'mongoose@^4.0.6',
+verbose parsed url   href: 'mongoose@^4.0.6' }
+silly cache add: name, spec, args [ 'mongoose', '^4.0.6', [ 'mongoose', '^4.0.6' ] ]
+verbose parsed url { pathname: '^4.0.6', path: '^4.0.6', href: '^4.0.6' }
+verbose addNamed [ 'mongoose', '^4.0.6' ]
+verbose addNamed [ null, null ]
+info addNameTag [ 'mongoose', '^4.0.6' ]
+verbose already installed in /home/pi/Desktop/Programming/Build-Bcrypt/Connetions skipping morgan@~1.3.0
+verbose cache add [ 'passport-google@^0.3.0', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'passport-google@^0.3.0',
+silly cache add: name, spec, args   [ 'passport-google@^0.3.0', null ] ]
+verbose parsed url { pathname: 'passport-google@^0.3.0',
+verbose parsed url   path: 'passport-google@^0.3.0',
+verbose parsed url   href: 'passport-google@^0.3.0' }
+silly cache add: name, spec, args [ 'passport-google', '^0.3.0', [ 'passport-google', '^0.3.0' ] ]
+verbose parsed url { pathname: '^0.3.0', path: '^0.3.0', href: '^0.3.0' }
+verbose addNamed [ 'passport-google', '^0.3.0' ]
+verbose addNamed [ null, null ]
+info addNameTag [ 'passport-google', '^0.3.0' ]
+verbose already installed in /home/pi/Desktop/Programming/Build-Bcrypt/Connetions skipping serve-favicon@~2.1.3
+verbose already installed in /home/pi/Desktop/Programming/Build-Bcrypt/Connetions skipping stylus@0.42.3
+verbose already installed in /home/pi/Desktop/Programming/Build-Bcrypt/Connetions skipping bcrypt@0.8.3
+verbose raw, before any munging mongodb
+verbose url resolving [ 'https://registry.npmjs.org/', './mongodb' ]
+verbose url resolved https://registry.npmjs.org/mongodb
+http GET https://registry.npmjs.org/mongodb
+verbose raw, before any munging mongoose
+verbose url resolving [ 'https://registry.npmjs.org/', './mongoose' ]
+verbose url resolved https://registry.npmjs.org/mongoose
+http GET https://registry.npmjs.org/mongoose
+verbose raw, before any munging passport-google
+verbose url resolving [ 'https://registry.npmjs.org/', './passport-google' ]
+verbose url resolved https://registry.npmjs.org/passport-google
+http GET https://registry.npmjs.org/passport-google
+ERR! Error: failed to fetch from registry: passport-google
+ERR!     at /usr/share/npm/lib/utils/npm-registry-client/get.js:139:12
+ERR!     at cb (/usr/share/npm/lib/utils/npm-registry-client/request.js:31:9)
+ERR!     at Request._callback (/usr/share/npm/lib/utils/npm-registry-client/request.js:136:18)
+ERR!     at Request.callback (/usr/lib/nodejs/request/main.js:119:22)
+ERR!     at Request.<anonymous> (/usr/lib/nodejs/request/main.js:212:58)
+ERR!     at Request.emit (events.js:88:20)
+ERR!     at ClientRequest.<anonymous> (/usr/lib/nodejs/request/main.js:412:12)
+ERR!     at ClientRequest.g (events.js:156:14)
+ERR!     at ClientRequest.emit (events.js:67:17)
+ERR!     at HTTPParser.parserOnIncomingClient [as onIncoming] (http.js:1256:7)
+ERR! You may report this log at:
+ERR!     <http://bugs.debian.org/npm>
+ERR! or use
+ERR!     reportbug --attach /home/pi/Desktop/Programming/Build-Bcrypt/Connetions/npm-debug.log npm
+ERR! 
+ERR! System Linux 3.18.11-v7+
+ERR! command "/usr/bin/nodejs" "/usr/bin/npm" "install"
+ERR! cwd /home/pi/Desktop/Programming/Build-Bcrypt/Connetions
+ERR! node -v v0.6.19
+ERR! npm -v 1.1.4
+ERR! message failed to fetch from registry: passport-google
+verbose exit [ 1, true ]

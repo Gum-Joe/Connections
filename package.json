@@ -21,18 +21,21 @@
   },
   "homepage": "https://github.com/Gum-Joe/Connections#readme",
   "dependencies": {
-    "body-parser": "~1.8.1",
-    "cookie-parser": "~1.3.3",
-    "debug": "~2.0.0",
-    "ejs": "2.3.1",
-    "express": "4.12.4",
-    "jade": "~1.6.0",
-    "mongodb": "^2.0.34",
+    "body-parser": "^1.13.1",
+    "cookie-parser": "^1.3.5",
+    "debug": "^2.2.0",
+    "ejs": "^2.3.2",
+    "express": "^4.13.0",
+    "html": "0.0.10",
+    "jade": "^1.11.0",
+    "mongodb": "^2.0.35",
     "mongoose": "^4.0.6",
-    "morgan": "~1.3.0",
+    "morgan": "^1.6.0",
+    "passport": "^0.2.2",
     "passport-google": "^0.3.0",
-    "serve-favicon": "~2.1.3",
-    "stylus": "0.42.3",
-    "bcrypt": "0.8.3"
+    "passport-http": "^0.2.2",
+    "passport-local": "^1.0.0",
+    "serve-favicon": "^2.3.0",
+    "stylus": "^0.51.1"
   }
 }
