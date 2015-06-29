@@ -23,6 +23,8 @@
     <Content Include="views\css\img\jumbtron.jpg" />
     <Content Include="views\index.ejs" />
     <Content Include="views\indexBackup.ejs" />
+    <Content Include="views\signedinarea\error.jade" />
+    <Content Include="views\signedinarea\index.ejs" />
     <Content Include="views\signin.ejs" />
     <Content Include="views\signup.ejs" />
     <Content Include="views\template.ejs" />
@@ -779,7 +781,7 @@
     <Folder Include="views\fonts" />
     <Folder Include="views\img" />
     <Folder Include="views\js" />
-    <Folder Include="views\signedinarea" />
+    <Folder Include="views\signedinarea\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
