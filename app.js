@@ -21,6 +21,9 @@ var ObjectId = require('mongodb').ObjectID;
 // awaiting solve
 // var bcrypt = require('bcrypt');
 
+// custom mods
+var connect = require("./private/connect.js");
+
 var app = express();
 
 // sign in schema
@@ -30,13 +33,8 @@ var userSchema = new mongoose.Schema({
 , email: String
 , pwd: String
 });
-
+var exits = false;
 var user = mongoose.model('user', userSchema);
-
-
-// custom scripts
-// var mod = require('./module');
-// var login = require('./login.js');
 
 //express config
 app.set('view engine', 'ejs');
@@ -53,15 +51,7 @@ app.use(express.static(path.join(__dirname, 'bower_components')));
 app.use(express.static(path.join(__dirname, 'views')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-mongoose.connect('mongodb://localhost:27017/connections');
-
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function (callback) {
-  // yay!
-  console.log("Yay! We succefully connected to the db");
-});
-
+connect.connect;
 //app
 app.get('/', function (req, res) {
 	res.render('index.ejs');
@@ -79,8 +69,9 @@ var port = process.env.PORT || 8080;
 app.listen(port, function () {
 	console.log("Running on port " + port);
 	console.log("The date and time is:", Date());
-    connect("ok");
+    console.log(connect.connect("Connect"));
 } );
+
 
 app.post('/signup', function (req, res) {
 	//hash the password
@@ -89,22 +80,44 @@ app.post('/signup', function (req, res) {
     var pass = req.body.pass;
     
     var signupuser = new user({
-  username: signupusername
+  username: susername
 , email: semail
 , pwd: pass
 });
+
+/*
+user.findOne({ username: susername }, function(err, signupuser) {
+  if (!err){
+      console.log("User tried to signup taken username");
+      exits = true;
+      res.render("signupREAL.ejs");
+  };
+});
+*/
+
+
+
+signupuser.save(function(err, signupuser) {
+  if (err){
+      return console.error("Errors storing DATA: " + err );
+  } else {
+      console.log("Done");
+      res.render('signin.ejs');
+  } 
+});
+
     // later
     /// bcrypt.genSalt(10, function(err, salt) {
     // for later pass = bcrypt.hash(res.body.pass, salt, function(err, hash) {
         // Store hash in your password DB. 
     // });
     // });
-    db.collection('users').insertOne({ "username": susername, "email": semail, "password": pass });
+    // db.collection('users').insertOne({ "username": susername, "email": semail, "password": pass });
 
     console.log("Sign Up succesful");
     console.log("Storing...");
     
-    res.render('signin.ejs');
+    
 });
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
