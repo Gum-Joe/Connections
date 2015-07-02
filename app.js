@@ -40,7 +40,7 @@ var user = mongoose.model('user', userSchema);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(bodyParser());
-app.use(logger('dev'));
+app.use(logger('dev')); //dev
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -54,14 +54,28 @@ app.use(express.static(path.join(__dirname, 'public')));
 connect.connect;
 //app
 app.get('/', function (req, res) {
-	res.render('index.ejs');
+	
+    res.render('index', {
+        isAuthenticated: false,
+        user: req.user
+    });
 });
 
 app.get('/login', function (req, res) {
 	res.render('signin.ejs');
 });
 app.get('/signup', function (req, res) {
-	res.render('signupREAL.ejs');
+	res.render('signup.ejs', {
+        error: "null"
+        });
+});
+
+app.get('/area/home', function (req, res) {
+	
+    res.render('area/index.ejs', {
+        isAuthenticated: false,
+        user: req.user
+    });
 });
 
 var port = process.env.PORT || 8080;
@@ -78,8 +92,19 @@ app.post('/signup', function (req, res) {
     var susername = req.body.username;
     var semail = req.body.email;
     var pass = req.body.pass;
-    
-    var signupuser = new user({
+    if(pass.length < 8) {
+        res.render("signup.ejs", {
+            error: "letters"
+        });
+        console.log("Not enough letters!");
+    }
+    else if(!/\d/.test(pass)){
+        res.render("signup.ejs", {
+            error: "numbers"
+        });
+        console.log("Not enough Numbers!");
+    } else {
+        var signupuser = new user({
   username: susername
 , email: semail
 , pwd: pass
@@ -104,8 +129,8 @@ signupuser.save(function(err, signupuser) {
       console.log("Done");
       res.render('signin.ejs');
   } 
-});
-
+    });
+    
     // later
     /// bcrypt.genSalt(10, function(err, salt) {
     // for later pass = bcrypt.hash(res.body.pass, salt, function(err, hash) {
@@ -116,8 +141,7 @@ signupuser.save(function(err, signupuser) {
 
     console.log("Sign Up succesful");
     console.log("Storing...");
-    
-    
+};   
 });
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

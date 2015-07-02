@@ -12,41 +12,123 @@
     <link rel="stylesheet" href="css/float.css">
 	</head>
 	<body>
-    <!-- /nav bar -->
-    <p>
-      <!-- spacing -->
-      
-      
-    </p>
 
-<div class="container">
+    <div class="container">
+      
+      <div class="container">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <% console.log(""); %>
+      <!-- /nav bar -->
+      <p>
+        <!-- spacing -->
+
+
+      </p>
+
+      <div class="container">
         <nav>
+          <!-- Set active class to step-->
           <ul class="nav nav-pills pull-left">
-            <li class="active" role="presentation"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
+            <li class="white active" role="presentation">
+              <a href="/home" class="active">Home
+            </a>
+            </li>
+            <li role="presentation">
+              <a href="/about" class="white">About
+            </a>
+            </li>
+            <li role="presentation">
+              <a href="/getstarted" class="white">Getting Started
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="/contact" class="white">
+                Contact
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="/help" class="white">
+                Help
+              </a>
+            </li>
           </ul>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation"><a href="#">Sign Up</a></li>
-            <li role="presentation"><a href="#">Login</a></li>
+            <li role="presentation">
+              <a href="/signup" class="white">Sign Up</a>
+            </li>
+            <li role="presentation">
+              <a href="/login" class="white">Login</a>
+            </li>
           </ul>
         </nav>
       </div>
-      
-          <p>
-      <!-- spacing -->
-      
-      
-    </p>
-    
-<div class="btn-group" role="group" aria-label="...">
-  <button type="button" class="btn btn-default">Your Details<span class="glyphicon glyphicon-chevron-right" aria-hidden="true">
-    </span></button>
-  <button type="button" class="btn btn-default">Setting up<span class="glyphicon glyphicon-chevron-right" aria-hidden="true">
-    </span></button>
-  <button type="button" class="btn btn-default">Creating your first thing<span class="glyphicon glyphicon-chevron-right" aria-hidden="true">
-    </span></button>
+
+      <p>
+        <!-- spacing -->
+
+
+      </p>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+</nav>
+<div class="container pad-little-top">
+        <nav>
+          <!-- Set active class to step-->
+          <ul class="nav nav-pills pull-left pad-jum-top-two">
+            <li class="active" role="presentation">
+              <a href="/step1" class="white setup-steps">Create your account...
+            </a>
+            </li>
+            <li role="presentation">
+              <a href="/step2" class="white setup-steps">Getting Stated...
+            </a>
+            </li>
+            <li role="presentation">
+              <a href="/step3" class="white setup-steps">
+                Create a team project...
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <% if(error === "letters"){ %>
+      <div class="container pad-little-top-3">
+      <div class="alert alert-danger" role="alert" id="calert"><span class="glyphicon glyphicon-remove-circle"></span> <b>Oh Snap!</b> You don't appear to have enough letters in your password. Please change this.</div>
 </div>
-<% console.log("User started sign up process"); %>
-  </body>
+<% }; %>
+
+
+<div class="container">
+     <form method="post" action="/signup" id="cform">
+  <div class="form-group">
+    <h1 class="form-signin-heading pull-middle">Hello, Let's get started with signing you up!</h2>
+    <h4><label for="username">Your Username</label></h4>
+    <input type="text" class="form-control" id="username" placeholder="Your Username" name="username">
+  </div>
+  <div class="form-group">
+    <h4><label for="email">Your Email</label></h4>
+    <input type="email" class="form-control" id="email" placeholder="Your email address" name="email">
+  </div>
+  <div class="form-group">
+    <h4><label for="pass">Your Password (Must have one number/symbol and at least 8 charachter in).</label></h4>
+    <input type="password" class="form-control" id="pass" placeholder="Password" name="pass">
+  </div>
+  <div class="checkbox">
+    <label>
+      <h4><input type="checkbox"> I agreee to the terms and conditions </h4>
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+    </div> <!-- /container -->
+
+
+    
+  
+
+</body>
+<script src="jquery/dist/jquery.js"></script>
+	<script src="bootstrap/dist/js/bootstrap.js"></script>
 </html>

@@ -11,7 +11,12 @@
 		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.css">
     <link rel="stylesheet" href="css/float.css">
 	</head>
-	<body>
+	  
+  <body>
+    <!--- Authnitaicted? -->
+  <% if(!isAuthenticated){ %>
+    <a href="/login">Please Login Here</a>
+      <% } else {  %>
     <!-- /nav bar -->
     <p>
       <!-- spacing -->
@@ -77,10 +82,7 @@
 
 
 </nav>
-  <!--- Authnitaicted? -->
-  <% if(!isAuthenticated){ %>
-    <% res.render(login.ejs); %>
-      <% };  %>
+
 
 <div class="header clearfix pull-middle pad-jum-top-two">
       <div class="container">
@@ -123,6 +125,7 @@
     <% console.log("Done"); %>
     <% console.log("Finshed @ ", Date()); %>
     <% console.log(""); %>
+      <% }; %>
 	</body>
 	<script src="jquery/dist/jquery.js"></script>
 	<script src="bootstrap/dist/js/bootstrap.js"></script>

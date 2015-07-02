@@ -43,6 +43,21 @@ db.once('open', function (callback) {
 done();
 	});
 	
+	it('Can we connect Store Data?', function (done) {
+		/*
+	mongoose.connect('mongodb://localhost:27017/connections');
+
+db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function (callback) {
+  // yay!
+  console.log("Yay! We succefully connected to the db");
+*/
+
+
+done();
+	});
+	
 	// store data
  
 })
