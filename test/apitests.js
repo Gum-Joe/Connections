@@ -5,7 +5,7 @@ var request = require('supertest')
 describe('GET and POST tests', function(){
   it('Can we run GET requests?', function(done){
     request(app)
-        .get('/')
+        .get('http://localhost:8080/')
         .expect(300)
         .address("http://localhost:8080")
         .end(function(err, res){
